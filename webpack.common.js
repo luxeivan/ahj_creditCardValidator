@@ -6,7 +6,7 @@ module.exports = {
   target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/ahj_moveElem/',
+    publicPath: '/ahj_creditCardValidator/',
   },
   module: {
     rules: [

@@ -1,12 +1,14 @@
 body {
-    color: #999;
     box-sizing: border-box;
 }
-ul{
+
+ul {
+    display: flex;
+    padding: 0;
     list-style-type: none;
 }
 li{
-    
+    margin: 0 5px;
 }
 
 .container {
@@ -14,22 +16,34 @@ li{
     margin: 0 auto;
 }
 
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
-    margin: 0 auto;
+.card_list__img {
+    width: 51px;
+    filter: grayscale(100%); 
+    opacity: 30%;
 }
-.grid__elem{
-    width: 98px;
-    height: 98px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.card_list__img_valid{
+    filter: grayscale(0%); 
+    opacity: 100%;
 }
-.image{
+.number_card{
+    width: 300px;
+    height: 30px;
+}
+.button{
+    border: 0;
+    border-radius: 5px;
+    width: 200px;
+    height: 35px;
+    background-color: #90ee90;
+    color: #333;
+}
+.button:hover{
+    background-color: #40ee40;
+}
+.message{
+    display: none;
+    color: red;
+}
+.visible{
     display: block;
-    width: 100%;
-    margin: 0 auto;
 }
